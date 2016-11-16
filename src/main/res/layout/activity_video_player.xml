@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context="io.github.ningwy.mobileplayer.ui.activity.VideoPlayerActivity">
+
+    <io.github.ningwy.mobileplayer.ui.view.CustomVideoView
+        android:id="@+id/vv_player"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"/>
+
+    <!-- 控制面板 -->
+    <include layout="@layout/vv_media_controller" />
+
+    <!-- 加载progressbar和网速 -->
+    <include layout="@layout/ll_buffer" />
+
+</RelativeLayout>

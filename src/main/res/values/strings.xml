@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">321影音</string>
+    <string name="splash_loading">正在启动...</string>
+
+    <string name="rg_tab_video">本地视频</string>
+    <string name="rg_net_video">本地音乐</string>
+    <string name="rg_tab_audio">网络视频</string>
+    <string name="rg_net_audio">网络音乐</string>
+</resources>

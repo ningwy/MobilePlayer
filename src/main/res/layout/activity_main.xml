@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.MainActivity">
+
+    <!--标题 -->
+    <include layout="@layout/ll_main_header" />
+
+    <!--内容 -->
+    <FrameLayout
+        android:id="@+id/fl_main_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!--状态栏 -->
+    <RadioGroup
+        android:id="@+id/rg_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#11000000"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_native_video"
+            style="@style/rg_main_style"
+            android:drawableTop="@drawable/native_video_selector"
+            android:text="@string/rg_tab_video"/>
+
+        <RadioButton
+            android:id="@+id/rb_native_audio"
+            style="@style/rg_main_style"
+            android:drawableTop="@drawable/native_audio_selector"
+            android:text="@string/rg_net_video"/>
+
+        <RadioButton
+            android:id="@+id/rb_net_video"
+            style="@style/rg_main_style"
+            android:drawableTop="@drawable/net_video_selector"
+            android:text="@string/rg_tab_audio"/>
+
+        <RadioButton
+            android:id="@+id/rb_net_audio"
+            style="@style/rg_main_style"
+            android:drawableTop="@drawable/net_audio_selector"
+            android:text="@string/rg_net_audio"/>
+
+    </RadioGroup>
+
+</LinearLayout>
